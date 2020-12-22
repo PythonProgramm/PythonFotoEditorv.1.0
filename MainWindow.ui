@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>801</width>
+      <height>601</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <widget class="QMenu" name="menuFilter">
+     <property name="title">
+      <string>Filter</string>
+     </property>
+     <addaction name="actionGaussianBlur_Filter"/>
+     <addaction name="actionKontrast"/>
+     <addaction name="actionKernel_Filter"/>
+     <addaction name="actionUnsharpMask_Filter"/>
+     <addaction name="actionBlur_Contour"/>
+     <addaction name="actionDetail_Filter"/>
+     <addaction name="actionEdge_Enhance_Filter"/>
+     <addaction name="actionEmboss_Filter"/>
+     <addaction name="actionFind_Edges_Filter"/>
+     <addaction name="actionsmooth_filter"/>
+     <addaction name="actionSharpen_Filter"/>
+    </widget>
+    <addaction name="menuFilter"/>
+   </widget>
+   <widget class="QMenu" name="menuDatei">
+    <property name="title">
+     <string>Datei</string>
+    </property>
+    <addaction name="actionopen"/>
+    <addaction name="actionsave"/>
+   </widget>
+   <addaction name="menuDatei"/>
+   <addaction name="menuEdit"/>
+  </widget>
+  <action name="actionBild_ffnen">
+   <property name="text">
+    <string>Bild öffnen</string>
+   </property>
+  </action>
+  <action name="actionSpeichern">
+   <property name="text">
+    <string>Speichern</string>
+   </property>
+  </action>
+  <action name="actionopen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionsave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionGaussianBlur_Filter">
+   <property name="text">
+    <string>GaussianBlur-Filter</string>
+   </property>
+  </action>
+  <action name="actionKontrast">
+   <property name="text">
+    <string>Kontrast</string>
+   </property>
+  </action>
+  <action name="actionKernel_Filter">
+   <property name="text">
+    <string>Kernel-Filter</string>
+   </property>
+  </action>
+  <action name="actionUnsharpMask_Filter">
+   <property name="text">
+    <string>UnsharpMask-Filter</string>
+   </property>
+  </action>
+  <action name="actionBlur_Contour">
+   <property name="text">
+    <string>Blur-Contour</string>
+   </property>
+  </action>
+  <action name="actionDetail_Filter">
+   <property name="text">
+    <string>Detail-Filter</string>
+   </property>
+  </action>
+  <action name="actionEdge_Enhance_Filter">
+   <property name="text">
+    <string>Edge-Enhance-Filter</string>
+   </property>
+  </action>
+  <action name="actionEmboss_Filter">
+   <property name="text">
+    <string>Emboss-Filter</string>
+   </property>
+  </action>
+  <action name="actionFind_Edges_Filter">
+   <property name="text">
+    <string>Find-Edges-Filter</string>
+   </property>
+  </action>
+  <action name="actionsmooth_filter">
+   <property name="text">
+    <string>Smooth-Filter</string>
+   </property>
+  </action>
+  <action name="actionSharpen_Filter">
+   <property name="text">
+    <string>Sharpen-Filter</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
